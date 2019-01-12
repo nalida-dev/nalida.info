@@ -3087,3 +3087,11 @@
 	.carousel-caption p {
 		font-size: 13pt;
 	}
+
+	#calendar header {
+		margin-bottom: 0;
+	}
+
+	#calendar .day {
+		background-color: white;
+	}
