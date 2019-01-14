@@ -1,0 +1,31 @@
+#calendar header {
+    margin-bottom: 0;
+}
+
+#calendar header * {
+    color: white
+}
+
+#calendar .day {
+    background-color: white;
+}
+
+@media (max-width:575px) {
+    #calendar .display-4 {
+        font-size: 1.5rem;
+    }
+    #calendar .day h5 {
+        background-color: #f8f9fa;
+        padding: 3px 5px 5px;
+        margin: -8px -8px 8px -8px;
+    }
+    #calendar .date {
+        padding-left: 4px;
+    }
+}
+
+@media (min-width: 576px) {
+    #calendar .day {
+        height: 14.2857vw;
+    }
+}

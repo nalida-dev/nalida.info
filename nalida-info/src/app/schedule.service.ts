@@ -20,6 +20,6 @@ export class ScheduleService {
   constructor() { }
 
   eventsOfTheMonth(year: number, month: number): Observable<WorkshopSchedule[]> {
-    return of(this.mock.filter(schedule => schedule.year === year && schedule.month === month));
+    return of(this.mock.filter(schedule => schedule.year === year && schedule.month === month + 1));
   }
 }
