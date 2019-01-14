@@ -13,6 +13,8 @@ export class CalendarViewComponent implements OnInit {
   year: number;
   month: number;
   monthData: any[];
+  moment: moment.Moment;
+  dayNames: string[];
 
   constructor(private scheduleService: ScheduleService) { }
 
@@ -38,11 +40,19 @@ export class CalendarViewComponent implements OnInit {
   }
 
   constructMonthData() {
-    if (!this.year || !this.month) {
+    if (!this.year || !this.month || !this.moment) {
       const now = moment();
       this.year = now.year();
       this.month = now.month();
+      this.moment = now;
       console.log({ now });
+
+      const d = now.clone().day(0);
+      this.dayNames = [];
+      for (let _ = 0; _ < 7; _++) {
+        this.dayNames.push(d.format('ddd'));
+        d.add(1, 'day');
+      }
     }
     const startDay: moment.Moment = moment([this.year, this.month, 1]).day(0); // last sunday
     const lastDay: moment.Moment = startDay.clone().add(1, 'month').subtract(1, 'day').day(6);
