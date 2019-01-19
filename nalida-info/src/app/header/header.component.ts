@@ -12,6 +12,14 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    if (this.image) {
+      window.onscroll = () => {
+        document.getElementById('header').style.height =
+          Math.max(0, 400 - document.documentElement.scrollTop) + 'px';
+      };
+    } else {
+      window.onscroll = null;
+    }
   }
 
 }
