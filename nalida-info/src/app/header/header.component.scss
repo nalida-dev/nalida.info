@@ -1,18 +1,22 @@
-.withoutImage {
-  color: #d4e0ef;
-  // color: #fafafa;
-  // background: #5385c1;
-  // background: #3b3b3b; // monto
-  background: #03344c;
-  top: 1.4em;
+#header {
+    color: #d4e0ef;
+    .logo {
+        font-weight: 700;
+        font-size: 2em;
+    }
+    
+    a {
+        font-size: 1em;
+    }
 }
 
-#header .logo {
-  font-weight: 700;
-  font-size: 2em;
-
+#header[class*=withoutImage] {
+    background: #03344c;
 }
-
-#header a {
-  font-size: 1em;
+#header[class*=withImage] {
+    height: 400px;
+    background-image: url("/images/colorworkshop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

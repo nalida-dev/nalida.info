@@ -10,7 +10,6 @@ export class MembersComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    document.body.classList.add('subpage');
   }
 
 }

@@ -10,7 +10,6 @@ export class ContactComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    document.body.classList.add('subpage');
   }
 
 }
