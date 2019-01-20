@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  @Input() image: string = null;
+
   constructor() { }
 
   ngOnInit() {
+    if (this.image) {
+      window.onscroll = () => {
+        document.getElementById('header').style.height =
+          Math.max(0, 400 - document.documentElement.scrollTop) + 'px';
+      };
+    } else {
+      window.onscroll = null;
+    }
   }
 
 }

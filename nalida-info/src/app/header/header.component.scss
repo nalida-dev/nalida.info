@@ -1,0 +1,35 @@
+#header {
+    color: #d4e0ef;
+    .logo {
+        margin-top: 19px;
+        font-weight: 700;
+        font-size: 2em;
+    }
+    a {
+        margin-top: 19px;
+        font-size: 1em;
+    }
+}
+
+#header[class*=withoutImage] {
+    height: 5.6em;
+    background: #03344c;
+}
+
+#header[class*=withImage] {
+    height: 400px;
+    min-height: 5.6em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#header[class*=withImage]::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+}

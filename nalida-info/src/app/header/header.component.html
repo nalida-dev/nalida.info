@@ -1,12 +1,12 @@
-<header id="header">
-    <div class="inner">
-      <a routerLink="/" class="logo">날리다: 나를 알리다</a>
-      <nav id="nav">
-        <a routerLink="/">대문</a>
-        <a routerLink="/members">소개</a>
-        <a routerLink="/nalida-story">날리다 이야기</a>
-        <a routerLink="/contact">문의</a>
-      </nav>
-      <a routerLink="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
-    </div>
-  </header>
+<header id="header" class="{{ image ? 'withImage' : 'withoutImage' }}"
+  [ngStyle]="{'background-image': 'url(&quot;/' + image + '&quot;)'}">
+  <div class="inner">
+    <a routerLink="/" class="logo">NALIDA</a>
+    <nav id="nav">
+      <a routerLink="/members">소개</a>
+      <a routerLink="/nalida-story">날리다 이야기</a>
+      <a routerLink="/contact">문의</a>
+    </nav>
+    <a routerLink="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+  </div>
+</header>

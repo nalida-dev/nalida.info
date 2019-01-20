@@ -10,7 +10,6 @@ export class IndexComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    document.body.classList.remove('subpage');
   }
 
 }
