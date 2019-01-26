@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { WorkshopService } from '../workshop.service';
 
 @Component({
-  selector: 'app-members',
-  templateUrl: './members.component.html',
-  styleUrls: ['./members.component.scss']
+  selector: 'app-introduction',
+  templateUrl: './introduction.component.html',
+  styleUrls: ['./introduction.component.scss']
 })
-export class MembersComponent implements OnInit {
+export class IntroductionComponent implements OnInit {
 
   posts: any;
   constructor(private workshopService: WorkshopService) { }
