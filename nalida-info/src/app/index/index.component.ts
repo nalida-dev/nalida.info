@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PostService } from '../post.service';
 
 @Component({
   selector: 'app-index',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./index.component.scss']
 })
 export class IndexComponent implements OnInit {
+  allTags: string[];
 
-  constructor() { }
+  constructor(private postService: PostService) { }
 
   ngOnInit() {
+    this.allTags = this.postService.getAllTags();
   }
 
 }

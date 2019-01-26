@@ -9,6 +9,7 @@ import { MembersComponent } from './members/members.component';
 import { NalidaStoryComponent } from './nalida-story/nalida-story.component';
 import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
+import { NalidaStoryPostViewComponent } from './nalida-story/nalida-story-post-view/nalida-story-post-view.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HeaderComponent } from './header/header.component';
     MembersComponent,
     NalidaStoryComponent,
     ContactComponent,
-    HeaderComponent
+    HeaderComponent,
+    NalidaStoryPostViewComponent
   ],
   imports: [
     BrowserModule,
