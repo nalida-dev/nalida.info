@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { WorkshopService } from '../workshop.service';
 
 @Component({
   selector: 'app-members',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MembersComponent implements OnInit {
 
-  constructor() { }
+  posts: any;
+  constructor(private workshopService: WorkshopService) { }
 
   ngOnInit() {
+    this.posts = this.workshopService.getPosts();
   }
-
 }
