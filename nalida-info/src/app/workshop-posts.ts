@@ -10,7 +10,7 @@ export const POSTS = [
     description: 'sample description'
   },
   {
-    title: '날리다: 같이혼자여행',
+    title: '날리다 : 같이혼자여행',
     image: 'images/workshop_gathonyeo.jpg',
     description: 'sample description'
   },
