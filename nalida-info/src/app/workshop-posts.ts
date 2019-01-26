@@ -26,7 +26,7 @@ export const POSTS = [
   },
   {
     title: '날리다 : 기타',
-    image: 'images/workshop_etc.jpg',
+    image: 'images/workshop_etc.png',
     description: '비일상, 허니번 등'
   }
 ]
