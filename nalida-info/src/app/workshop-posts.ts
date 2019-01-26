@@ -21,7 +21,7 @@ export const POSTS = [
   },
   {
     title: '날리다: World',
-    image: 'images/workshop_nalinyang.png',
+    image: 'images/workshop_world.jpg',
     description: 'sample description'
   }
 ]
