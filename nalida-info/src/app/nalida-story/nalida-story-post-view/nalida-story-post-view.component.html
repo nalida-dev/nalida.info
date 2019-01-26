@@ -1,0 +1,15 @@
+<article class="m-2 text-center">
+  <div class="image fit">
+    <img src="images/workshop_color.jpg" alt="Pic 01" />
+  </div>
+  <header>
+    <h3>{{ post.title }}</h3>
+  </header>
+  <p>{{ post.description }}</p>
+  <div class="row justify-content-center">
+    <span *ngFor="let tag of post.tags"><a href="nalida-story/tags/{{ tag }}">#{{ tag }}</a></span>
+  </div>
+  <footer>
+    <a href="assets/posts/2019-01-12-post-example.html" class="button special">More</a>
+  </footer>
+</article>
