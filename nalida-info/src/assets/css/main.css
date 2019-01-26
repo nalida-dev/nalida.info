@@ -1900,16 +1900,16 @@
 		justify-content: space-between;
 	}
 
-		.flex.flex-2 article {
+		.flex.flex-2 > * {
 			width: 47%;
 		}
 
-		.flex.flex-3 article {
+		.flex.flex-3 > * {
 			position: relative;
 			width: 28%;
 		}
 
-			.flex.flex-3 article:before {
+			.flex.flex-3 > *:before {
 				content: '';
 				position: absolute;
 				width: 100%;
@@ -1920,22 +1920,22 @@
 				pointer-events: none;
 			}
 
-			.flex.flex-3 article:last-child:before {
+			.flex.flex-3 > *:last-child:before {
 				border: none;
 			}
 
-		.flex.flex-4 .box {
+		.flex.flex-4 > * {
 			width: 21%;
 		}
 
 		@media screen and (max-width: 980px) {
 
-			.flex.flex-2 article {
+			.flex.flex-2 > * {
 				width: 100%;
 				margin-bottom: 3em;
 			}
 
-				.flex.flex-2 article:last-child {
+				.flex.flex-2 > *:last-child {
 					margin-bottom: 0;
 				}
 
@@ -1946,24 +1946,24 @@
 				flex-direction: column;
 			}
 
-				.flex.flex-3 article {
+				.flex.flex-3 > * {
 					width: 100%;
 					border-bottom: 1px solid #dbdbdb;
 					padding-bottom: 2.5em;
 					margin-bottom: 3em;
 				}
 
-					.flex.flex-3 article:last-child {
+					.flex.flex-3 > *:last-child {
 						border: none;
 						padding-bottom: 0;
 						margin: 0 0 1em 0;
 					}
 
-					.flex.flex-3 article:before {
+					.flex.flex-3 > *:before {
 						display: none;
 					}
 
-			.flex.flex-4 .box {
+			.flex.flex-4 > * {
 				width: 47%;
 			}
 
@@ -1971,7 +1971,7 @@
 
 		@media screen and (max-width: 480px) {
 
-			.flex.flex-4 .box {
+			.flex.flex-4 > * {
 				width: 100%;
 			}
 
