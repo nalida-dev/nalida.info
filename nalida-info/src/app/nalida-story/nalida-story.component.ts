@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PostService } from '../post.service';
 import { ActivatedRoute } from '@angular/router';
-import { setEqual } from '../utils';
 
 @Component({
   selector: 'app-nalida-story',
