@@ -76,8 +76,24 @@
   </div>
 </section>
 
+<section id="tags" class="wrapper style1 special">
+  <div class="inner">
+    <header class="align-center">
+      <h2>태그들</h2>
+      <p>태그태그태그</p>
+    </header>
+  </div>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <h3 *ngFor="let tag of allTags">
+        <a href="nalida-story/tags/{{ tag }}">#{{ tag }}</a>
+      </h3>
+    </div>
+  </div>
+</section>
+
 <!-- Two -->
-<section id="calendar" class="wrapper style1 special">
+<section id="calendar" class="wrapper style2 special">
   <div class="inner">
     <header>
       <h2>캘린더</h2>
