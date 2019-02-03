@@ -1,3 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "./assets/css/main.css";
+
+section.wrapper header, article.wrapper header {
+  margin-bottom: 3em;
+}
+
+@media screen and (max-width: 980px) {
+
+  section.wrapper, article.wrapper {
+    padding: 5em 0;
+  }
+
+    section.wrapper header, article.wrapper header {
+      margin-bottom: 2em;
+    }
+
+      section.wrapper header h2, article.wrapper header h2 {
+        font-size: 2.3em;
+      }
+
+      section.wrapper header p, article.wrapper header p {
+        font-size: .9em;
+      }
+
+}
+
+@media screen and (max-width: 736px) {
+
+  section.wrapper, article.wrapper {
+    padding: 5em 0;
+  }
+
+    section.wrapper header, article.wrapper header {
+      margin-bottom: 2em;
+    }
+
+}
