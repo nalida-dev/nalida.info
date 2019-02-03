@@ -7,6 +7,12 @@
       <a routerLink="/nalida-story">날리다 이야기</a>
       <a routerLink="/contact">문의</a>
     </nav>
-    <a routerLink="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+    <a (click)="navPanelVisible = !navPanelVisible" class="navPanelToggle"><span class="fa fa-bars"></span></a>
   </div>
 </header>
+<div id="navPanel" [class.visible]="navPanelVisible">
+  <a routerLink="/intro">소개</a>
+  <a routerLink="/nalida-story">날리다 이야기</a>
+  <a routerLink="/contact">문의</a>
+  <a (click)="navPanelVisible = !navPanelVisible" class='close'></a>
+</div>

@@ -15,6 +15,7 @@
     height: 5.6em;
     background: #03344c;
 }
+    
 
 #header[class*=withImage] {
     height: 400px;
@@ -25,11 +26,164 @@
 }
 
 #header[class*=withImage]::before {
-  content: '';
-  display: block;
-  position: absolute;
-  background-color: #000;
-  opacity: 0.3;
-  width: 100%;
-  height: 100%;
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #000;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 980px) {
+    $header-height: 4.5em;
+    $header-margin-top: 13px;
+    $logo-font-size: 1.8em;
+
+    #header[class*=withoutImage] {
+        height: $header-height;
+        background: #03344c;
+        .logo {
+            margin-top: $header-margin-top;
+            font-size: $logo-font-size;
+        }
+        a {
+            margin-top: $header-margin-top;
+        }
+    }
+
+    #header[class*=withImage] {
+        height: 400px;
+        min-height: $header-height;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .logo {
+            margin-top: $header-margin-top;
+            font-size: $logo-font-size;
+        }
+        a {
+            margin-top: $header-margin-top;
+        }
+    }
+
+    #header[class*=withImage]::before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: #000;
+        opacity: 0.3;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    $header-height: 3.9em;
+    $header-margin-top: 9px;
+    $logo-font-size: 1.6em;
+
+    #header[class*=withoutImage] {
+        height: $header-height;
+        background: #03344c;
+        .logo {
+            margin-top: $header-margin-top;
+            font-size: $logo-font-size;
+        }
+        a {
+            margin-top: $header-margin-top;
+        }
+    }
+        
+
+    #header[class*=withImage] {
+        height: 400px;
+        min-height: $header-height;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .logo {
+            margin-top: $header-margin-top;
+            font-size: $logo-font-size;
+        }
+        a {
+            margin-top: $header-margin-top;
+        }
+    }
+
+    #header[class*=withImage]::before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: #000;
+        opacity: 0.3;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    $header-height: 3.6em;
+    $header-margin-top: 7px;
+    $logo-font-size: 1.4em;
+
+    #header[class*=withoutImage] {
+        height: $header-height;
+        background: #03344c;
+        .logo {
+            margin-top: $header-margin-top;
+            font-size: $logo-font-size;
+        }
+        a {
+            margin-top: $header-margin-top;
+        }
+    }
+        
+
+    #header[class*=withImage] {
+        height: 400px;
+        min-height: $header-height;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .logo {
+            margin-top: $header-margin-top;
+            font-size: $logo-font-size;
+        }
+        a {
+            margin-top: $header-margin-top;
+        }
+    }
+
+    #header[class*=withImage]::before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: #000;
+        opacity: 0.3;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#navPanel {
+    background: #03344cf6;
+}
+
+#navPanel .close:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+    content: '\f00d';
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
 }
