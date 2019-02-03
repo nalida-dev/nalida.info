@@ -12,6 +12,7 @@ import { HeaderComponent } from './header/header.component';
 import { NalidaStoryPostPreviewComponent } from './nalida-story/nalida-story-post-preview/nalida-story-post-preview.component';
 import { IntroductionPostPreviewComponent } from './introduction/introduction-post-preview/introduction-post-preview.component';
 import { NalidaStoryPostViewComponent } from './nalida-story/nalida-story-post-view/nalida-story-post-view.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { NalidaStoryPostViewComponent } from './nalida-story/nalida-story-post-v
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
