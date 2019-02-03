@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PostService } from 'src/app/post.service';
 import { Post } from 'src/app/post';
+import * as showdown from 'showdown';
 
 @Component({
   selector: 'app-nalida-story-post-view',
@@ -10,7 +11,10 @@ import { Post } from 'src/app/post';
 })
 export class NalidaStoryPostViewComponent implements OnInit {
 
+  @ViewChild('markdownContainer') markdownContainerDiv: ElementRef<HTMLDivElement>;
+
   post: Post;
+  markdownConverter: showdown.Converter;
 
   constructor(
     private route: ActivatedRoute,
@@ -20,6 +24,9 @@ export class NalidaStoryPostViewComponent implements OnInit {
   ngOnInit() {
     const postId = +this.route.snapshot.paramMap.get('postId');
     this.post = this.postService.getPosts().find(post => post.id === postId);
+    this.markdownConverter = new showdown.Converter();
+    this.markdownContainerDiv.nativeElement.innerHTML =
+      this.markdownConverter.makeHtml(this.post.description);
   }
 
 }
