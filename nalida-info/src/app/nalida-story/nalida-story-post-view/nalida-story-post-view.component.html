@@ -1,16 +1,5 @@
-<div class="card mb-4">
-  <img class='card-img-top image fit' src="{{ post.image }}" alt="nalida-story-image" />
-  <div class='card-body p-2'>
-    <h3 class="card-title bold">{{ post.title }}</h3>
-    <p class="card-text text-muted">{{ post.description }}</p>
-    <div class="row">
-      <span *ngFor="let tag of post.tags"><a href="nalida-story/tags/{{ tag }}">#{{ tag }}</a></span>
-    </div>
-    <div class="card-footer d-flex justify-content-between">
-      <div class="image round">
-          <img class="img-thumbnail" src="images/member_{{ post.author }}_250.jpg" alt="{{ post.author }}" style="width: 60px;" />
-      </div>
-      <a href="assets/posts/2019-01-12-post-example.html" class="button special my-auto">더보기</a>
-    </div>
+<section id="main" class="wrapper">
+  <div class="inner">
+    <div #markdownContainer></div>
   </div>
-</div>
+</section>
