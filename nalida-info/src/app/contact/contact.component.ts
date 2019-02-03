@@ -22,8 +22,29 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
   }
 
+  // TODO: form validation
+
+  isValid({name, email, category, priority, copy, human, message }) {
+    if (category === '') {
+      return false;
+    }
+    if (!human) {
+      return false;
+    }
+    if (!message.length) {
+      return false;
+    }
+    if (!email.length) {
+      return false;
+    }
+    return true;
+  }
+
   onSubmit() {
-    console.log(this.contactForm.value);
+    const formAnswer = this.contactForm.value;
+    if (this.isValid(formAnswer)) {
+      {}
+    }
   }
 
 }
