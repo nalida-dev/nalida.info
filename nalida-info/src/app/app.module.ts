@@ -9,8 +9,8 @@ import { IntroductionComponent } from './introduction/introduction.component';
 import { NalidaStoryComponent } from './nalida-story/nalida-story.component';
 import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
-import { NalidaStoryPostViewComponent } from './nalida-story/nalida-story-post-view/nalida-story-post-view.component';
-import { IntroductionPostViewComponent } from './introduction/introduction-post-view/introduction-post-view.component';
+import { NalidaStoryPostPreviewComponent } from './nalida-story/nalida-story-post-preview/nalida-story-post-preview.component';
+import { IntroductionPostPreviewComponent } from './introduction/introduction-post-preview/introduction-post-preview.component';
 
 @NgModule({
   declarations: [
@@ -21,8 +21,8 @@ import { IntroductionPostViewComponent } from './introduction/introduction-post-
     NalidaStoryComponent,
     ContactComponent,
     HeaderComponent,
-    NalidaStoryPostViewComponent,
-    IntroductionPostViewComponent
+    NalidaStoryPostPreviewComponent,
+    IntroductionPostPreviewComponent
   ],
   imports: [
     BrowserModule,
