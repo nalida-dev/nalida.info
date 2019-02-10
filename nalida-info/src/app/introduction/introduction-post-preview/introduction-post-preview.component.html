@@ -1,12 +1,13 @@
-<article class="text-center">
-  <div class="image fit">
-    <img src="{{ post.image }}" alt="Pic 01" />
+<article class="text-center mb-5">
+  <div class="image-container w-100"
+    [ngStyle]="{'background-image': 'url(&quot;/' + post.image + '&quot;)'}">
+    <!-- <img src="{{ post.image }}" alt="Pic 01" /> -->
   </div>
   <header>
-    <h3>{{ post.title }}</h3>
+    <h3 class="my-2">{{ post.title }}</h3>
   </header>
   <p>{{ post.description }}</p>
   <footer>
-    <a href="assets/posts/2019-01-12-post-example.html" class="button special">More</a>
+    <a class="my-2" href="assets/posts/2019-01-12-post-example.html" class="button special">More</a>
   </footer>
 </article>
